@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace MobileCenter
+namespace Mobile_center
 {
     static class Program
     {
@@ -11,25 +11,30 @@ namespace MobileCenter
         /// Главная точка входа для приложения.
         /// </summary>
 
-        public static mainForm mainForm;
-        public static authorizationForm authorizationForm;
-        public static productsForm productsForm;
-        public static servicesForm servicesForm;
-        public static customersForm customersForm;
-        public static staffForm staffForm;
+        public static formMain formMain;
+        public static formAuthorization formAuthorization;
+        public static formProducts formProducts;
+        public static formServices formServices;
+        public static formCustomers formCustomers;
+        public static formStaff formStaff;
 
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            mainForm = new MobileCenter.mainForm();
-            authorizationForm = new MobileCenter.authorizationForm();
-            productsForm = new MobileCenter.productsForm();
-            servicesForm = new MobileCenter.servicesForm();
-            customersForm = new MobileCenter.customersForm();
-            staffForm = new MobileCenter.staffForm();
-            Application.Run(authorizationForm);
+
+            formAuthorization = new formAuthorization();
+            formMain = new formMain();
+
+            DataGridManager manager = new DataGridManager();
+
+            formProducts    = new formProducts(manager);
+            formServices    = new formServices(manager);
+            formCustomers   = new formCustomers(manager);
+            formStaff       = new formStaff(manager);
+
+            Application.Run(formAuthorization);
         }
     }
 }

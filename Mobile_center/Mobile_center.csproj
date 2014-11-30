@@ -44,55 +44,65 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="authorizationForm.cs">
+    <Compile Include="DataGridManager.cs" />
+    <Compile Include="formAuthorization.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="authorizationForm.Designer.cs">
-      <DependentUpon>authorizationForm.cs</DependentUpon>
+    <Compile Include="formAuthorization.Designer.cs">
+      <DependentUpon>formAuthorization.cs</DependentUpon>
     </Compile>
-    <Compile Include="customersForm.cs">
+    <Compile Include="formCustomers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="customersForm.Designer.cs">
-      <DependentUpon>customersForm.cs</DependentUpon>
+    <Compile Include="formCustomers.Designer.cs">
+      <DependentUpon>formCustomers.cs</DependentUpon>
     </Compile>
-    <Compile Include="mainForm.cs">
+    <Compile Include="formEditor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="mainForm.Designer.cs">
-      <DependentUpon>mainForm.cs</DependentUpon>
+    <Compile Include="formEditor.Designer.cs">
+      <DependentUpon>formEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="productsForm.cs">
+    <Compile Include="formMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="productsForm.Designer.cs">
-      <DependentUpon>productsForm.cs</DependentUpon>
+    <Compile Include="formMain.Designer.cs">
+      <DependentUpon>formMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formProducts.Designer.cs">
+      <DependentUpon>formProducts.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="servicesForm.cs">
+    <Compile Include="formServices.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="servicesForm.Designer.cs">
-      <DependentUpon>servicesForm.cs</DependentUpon>
+    <Compile Include="formServices.Designer.cs">
+      <DependentUpon>formServices.cs</DependentUpon>
     </Compile>
-    <Compile Include="staffForm.cs">
+    <Compile Include="formStaff.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="staffForm.Designer.cs">
-      <DependentUpon>staffForm.cs</DependentUpon>
+    <Compile Include="formStaff.Designer.cs">
+      <DependentUpon>formStaff.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="authorizationForm.resx">
-      <DependentUpon>authorizationForm.cs</DependentUpon>
+    <EmbeddedResource Include="formAuthorization.resx">
+      <DependentUpon>formAuthorization.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="customersForm.resx">
-      <DependentUpon>customersForm.cs</DependentUpon>
+    <EmbeddedResource Include="formCustomers.resx">
+      <DependentUpon>formCustomers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="mainForm.resx">
-      <DependentUpon>mainForm.cs</DependentUpon>
+    <EmbeddedResource Include="formEditor.resx">
+      <DependentUpon>formEditor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="productsForm.resx">
-      <DependentUpon>productsForm.cs</DependentUpon>
+    <EmbeddedResource Include="formMain.resx">
+      <DependentUpon>formMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formProducts.resx">
+      <DependentUpon>formProducts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -103,11 +113,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="servicesForm.resx">
-      <DependentUpon>servicesForm.cs</DependentUpon>
+    <EmbeddedResource Include="formServices.resx">
+      <DependentUpon>formServices.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="staffForm.resx">
-      <DependentUpon>staffForm.cs</DependentUpon>
+    <EmbeddedResource Include="formStaff.resx">
+      <DependentUpon>formStaff.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
