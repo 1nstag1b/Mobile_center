@@ -31,11 +31,11 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.mainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.servicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.customersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.staffToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.staffToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.refToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
@@ -56,11 +56,11 @@
             // 
             this.mainToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.productsToolStripMenuItem,
-            this.servicesToolStripMenuItem,
+            this.ordersToolStripMenuItem,
             this.customersToolStripMenuItem,
-            this.staffToolStripMenuItem1,
+            this.staffToolStripMenuItem,
             this.logOutToolStripMenuItem,
-            this.exitToolStripMenuItem1});
+            this.exitToolStripMenuItem});
             this.mainToolStripMenuItem.Name = "mainToolStripMenuItem";
             this.mainToolStripMenuItem.Size = new System.Drawing.Size(61, 20);
             this.mainToolStripMenuItem.Text = "Главная";
@@ -73,13 +73,13 @@
             this.productsToolStripMenuItem.CheckedChanged += new System.EventHandler(this.productsToolStripMenuItem_CheckedChanged);
             this.productsToolStripMenuItem.Click += new System.EventHandler(this.productsToolStripMenuItem_Click);
             // 
-            // servicesToolStripMenuItem
+            // ordersToolStripMenuItem
             // 
-            this.servicesToolStripMenuItem.Name = "servicesToolStripMenuItem";
-            this.servicesToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
-            this.servicesToolStripMenuItem.Text = "Услуги";
-            this.servicesToolStripMenuItem.CheckedChanged += new System.EventHandler(this.servicesToolStripMenuItem_CheckedChanged);
-            this.servicesToolStripMenuItem.Click += new System.EventHandler(this.servicesToolStripMenuItem_Click);
+            this.ordersToolStripMenuItem.Name = "ordersToolStripMenuItem";
+            this.ordersToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.ordersToolStripMenuItem.Text = "Заказы";
+            this.ordersToolStripMenuItem.CheckedChanged += new System.EventHandler(this.ordersToolStripMenuItem_CheckedChanged);
+            this.ordersToolStripMenuItem.Click += new System.EventHandler(this.ordersToolStripMenuItem_Click);
             // 
             // customersToolStripMenuItem
             // 
@@ -89,13 +89,13 @@
             this.customersToolStripMenuItem.CheckedChanged += new System.EventHandler(this.customersToolStripMenuItem_CheckedChanged);
             this.customersToolStripMenuItem.Click += new System.EventHandler(this.customersToolStripMenuItem_Click);
             // 
-            // staffToolStripMenuItem1
+            // staffToolStripMenuItem
             // 
-            this.staffToolStripMenuItem1.Name = "staffToolStripMenuItem1";
-            this.staffToolStripMenuItem1.Size = new System.Drawing.Size(191, 22);
-            this.staffToolStripMenuItem1.Text = "Персонал";
-            this.staffToolStripMenuItem1.CheckedChanged += new System.EventHandler(this.staffToolStripMenuItem1_CheckedChanged);
-            this.staffToolStripMenuItem1.Click += new System.EventHandler(this.staffToolStripMenuItem1_Click);
+            this.staffToolStripMenuItem.Name = "staffToolStripMenuItem";
+            this.staffToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.staffToolStripMenuItem.Text = "Персонал";
+            this.staffToolStripMenuItem.CheckedChanged += new System.EventHandler(this.staffToolStripMenuItem_CheckedChanged);
+            this.staffToolStripMenuItem.Click += new System.EventHandler(this.staffToolStripMenuItem_Click);
             // 
             // logOutToolStripMenuItem
             // 
@@ -104,12 +104,12 @@
             this.logOutToolStripMenuItem.Text = "Сменить пользователя";
             this.logOutToolStripMenuItem.Click += new System.EventHandler(this.logOutToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem1
+            // exitToolStripMenuItem
             // 
-            this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(191, 22);
-            this.exitToolStripMenuItem1.Text = "Выход";
-            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
+            this.exitToolStripMenuItem.Text = "Выход";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // refToolStripMenuItem
             // 
@@ -148,13 +148,13 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem mainToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem productsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem servicesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem customersToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem staffToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem staffToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem refToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ordersToolStripMenuItem;
     }
 }
 

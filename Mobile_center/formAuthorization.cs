@@ -16,7 +16,7 @@ namespace Mobile_center
             InitializeComponent();
         }
 
-        private void btnSignIn_Click(object sender, EventArgs e)
+        private void btnLogIn_Click(object sender, EventArgs e)
         {
             string login = tbLogin.Text;
             string password = tbPassword.Text;

@@ -40,10 +40,11 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridProducts = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.producer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.type = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -57,26 +58,26 @@
             this.editToolStripMenuItem,
             this.removeToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 92);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(125, 70);
             // 
             // addToolStripMenuItem
             // 
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.addToolStripMenuItem.Text = "Добавить";
             this.addToolStripMenuItem.Click += new System.EventHandler(this.addToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.editToolStripMenuItem.Text = "Изменить";
             this.editToolStripMenuItem.Click += new System.EventHandler(this.editToolStripMenuItem_Click);
             // 
             // removeToolStripMenuItem
             // 
             this.removeToolStripMenuItem.Name = "removeToolStripMenuItem";
-            this.removeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.removeToolStripMenuItem.Size = new System.Drawing.Size(124, 22);
             this.removeToolStripMenuItem.Text = "Удалить";
             this.removeToolStripMenuItem.Click += new System.EventHandler(this.removeToolStripMenuItem_Click);
             // 
@@ -145,10 +146,11 @@
             this.dataGridProducts.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
+            this.id,
+            this.name,
+            this.producer,
+            this.type,
+            this.cost});
             this.dataGridProducts.ContextMenuStrip = this.contextMenuStrip1;
             this.dataGridProducts.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridProducts.Location = new System.Drawing.Point(0, 0);
@@ -161,25 +163,30 @@
             this.dataGridProducts.TabIndex = 4;
             this.dataGridProducts.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridProducts_KeyDown);
             // 
-            // Column1
+            // id
             // 
-            this.Column1.HeaderText = "Название";
-            this.Column1.Name = "Column1";
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
             // 
-            // Column2
+            // name
             // 
-            this.Column2.HeaderText = "Производитель";
-            this.Column2.Name = "Column2";
+            this.name.HeaderText = "Название";
+            this.name.Name = "name";
             // 
-            // Column3
+            // producer
             // 
-            this.Column3.HeaderText = "Тип устройства";
-            this.Column3.Name = "Column3";
+            this.producer.HeaderText = "Производитель";
+            this.producer.Name = "producer";
             // 
-            // Column4
+            // type
             // 
-            this.Column4.HeaderText = "Цена";
-            this.Column4.Name = "Column4";
+            this.type.HeaderText = "Тип";
+            this.type.Name = "type";
+            // 
+            // cost
+            // 
+            this.cost.HeaderText = "Цена";
+            this.cost.Name = "cost";
             // 
             // formProducts
             // 
@@ -212,12 +219,13 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dataGridProducts;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.ToolStripMenuItem addToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn producer;
+        private System.Windows.Forms.DataGridViewTextBoxColumn type;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cost;
 
 
 

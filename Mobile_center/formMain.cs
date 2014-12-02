@@ -22,7 +22,7 @@ namespace Mobile_center
                     Program.formProducts.Show();
                     break;
                 case 2:
-                    Program.formServices.Show();
+                    Program.formOrders.Show();
                     break;
                 case 3:
                     Program.formCustomers.Show();
@@ -65,10 +65,10 @@ namespace Mobile_center
             (sender as ToolStripMenuItem).Checked = true;
         }
 
-        private void servicesToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ordersToolStripMenuItem_Click(object sender, EventArgs e)
         {
             showChildForm(2);
-            this.Text = "Mobile Center: Услуги";
+            this.Text = "Mobile Center: Заказы";
             (sender as ToolStripMenuItem).Checked = true;
         }
 
@@ -79,7 +79,7 @@ namespace Mobile_center
             (sender as ToolStripMenuItem).Checked = true;
         }
 
-        private void staffToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void staffToolStripMenuItem_Click(object sender, EventArgs e)
         {
             showChildForm(4);
             this.Text = "Mobile Center: Персонал";
@@ -104,7 +104,7 @@ namespace Mobile_center
             uncheckLast(sender as ToolStripMenuItem);
         }
 
-        private void servicesToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
+        private void ordersToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
         {
             uncheckLast(sender as ToolStripMenuItem);
         }
@@ -114,9 +114,9 @@ namespace Mobile_center
             uncheckLast(sender as ToolStripMenuItem);
         }
 
-        private void staffToolStripMenuItem1_CheckedChanged(object sender, EventArgs e)
+        private void staffToolStripMenuItem_CheckedChanged(object sender, EventArgs e)
         {
             uncheckLast(sender as ToolStripMenuItem);
-        }
+        } 
     }
 }

@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
@@ -40,10 +41,10 @@
             this.removeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridCustomers = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.birthday = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phone_number = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -142,10 +143,10 @@
             this.dataGridCustomers.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridCustomers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridCustomers.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4});
+            this.id,
+            this.name,
+            this.birthday,
+            this.phone_number});
             this.dataGridCustomers.ContextMenuStrip = this.contextMenuStrip1;
             this.dataGridCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridCustomers.Location = new System.Drawing.Point(0, 0);
@@ -158,25 +159,28 @@
             this.dataGridCustomers.TabIndex = 5;
             this.dataGridCustomers.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridCustomers_KeyDown);
             // 
-            // Column1
+            // id
             // 
-            this.Column1.HeaderText = "Название";
-            this.Column1.Name = "Column1";
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
             // 
-            // Column2
+            // name
             // 
-            this.Column2.HeaderText = "Производитель";
-            this.Column2.Name = "Column2";
+            this.name.HeaderText = "Имя";
+            this.name.Name = "name";
             // 
-            // Column3
+            // birthday
             // 
-            this.Column3.HeaderText = "Тип устройства";
-            this.Column3.Name = "Column3";
+            dataGridViewCellStyle2.Format = "d";
+            dataGridViewCellStyle2.NullValue = null;
+            this.birthday.DefaultCellStyle = dataGridViewCellStyle2;
+            this.birthday.HeaderText = "Дата рождения";
+            this.birthday.Name = "birthday";
             // 
-            // Column4
+            // phone_number
             // 
-            this.Column4.HeaderText = "Цена";
-            this.Column4.Name = "Column4";
+            this.phone_number.HeaderText = "Телефон";
+            this.phone_number.Name = "phone_number";
             // 
             // formCustomers
             // 
@@ -209,10 +213,10 @@
         private System.Windows.Forms.ToolStripMenuItem removeToolStripMenuItem;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dataGridCustomers;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn birthday;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phone_number;
 
 
     }

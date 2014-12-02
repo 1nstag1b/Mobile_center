@@ -27,11 +27,39 @@ namespace Mobile_center
             this.dataGrid = dataGrid;
         }
 
+        private string[] getHeaders(string caption)
+        {
+            List<string> headers = new List<string>();
+
+            switch (dataGrid.Name)
+            {
+                case "dataGridProducts":
+                    headers.Add(caption + " товара");
+                    break;
+                case "dataGridOrders":
+                    headers.Add(caption + " заказа");
+                    break;
+                case "dataGridCustomers":
+                    headers.Add(caption + " покупателя");
+                    break;
+                case "dataGridStaff":
+                    headers.Add(caption + " персонала");
+                    break;
+            }
+            
+            for (int i = 1; i < dataGrid.ColumnCount; i++)
+            {
+                headers.Add(dataGrid.Columns[i].HeaderText);
+            }
+
+            return headers.ToArray();
+        }
+
         public void Add()
         {
             string[] row = null;
 
-            formEditor add = new formEditor("Добавление", dataGrid.Name);
+            formEditor add = new formEditor(getHeaders("Добавление"));
 
             if (add.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
@@ -56,12 +84,17 @@ namespace Mobile_center
                 return;
             }
 
-            string[] row = dataGrid.Rows[index].Cells.Cast<DataGridViewTextBoxCell>().Select(cell => cell.Value.ToString()).ToArray();
-            formEditor edit = new formEditor("Изменение", dataGrid.Name, row);
+            string[] values = new string[dataGrid.ColumnCount];
+            for (int i = 0; i < dataGrid.ColumnCount; i++)
+            {
+                values[i] = dataGrid[i, index].Value.ToString();
+            }
+
+            formEditor edit = new formEditor(getHeaders("Изменение"), values);
             
             if (edit.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                row = (string[])edit.Tag;
+                string[] row = (string[])edit.Tag;
 
                 //Обновление БД
                 //Если успешно, то удаляем старую строку и добавляем новую строку в таблицу

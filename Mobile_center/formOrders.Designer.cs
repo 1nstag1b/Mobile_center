@@ -1,6 +1,6 @@
 ﻿namespace Mobile_center
 {
-    partial class formServices
+    partial class formOrders
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.addToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,7 +39,7 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dataGridServices = new System.Windows.Forms.DataGridView();
+            this.dataGridOrders = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,7 +47,7 @@
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridServices)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridOrders)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -88,7 +88,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(541, 35);
+            this.panel1.Size = new System.Drawing.Size(471, 35);
             this.panel1.TabIndex = 3;
             // 
             // btnRemove
@@ -123,43 +123,43 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dataGridServices);
+            this.panel2.Controls.Add(this.dataGridOrders);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 35);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(541, 371);
+            this.panel2.Size = new System.Drawing.Size(471, 351);
             this.panel2.TabIndex = 4;
             // 
-            // dataGridServices
+            // dataGridOrders
             // 
-            this.dataGridServices.AllowUserToAddRows = false;
-            this.dataGridServices.AllowUserToDeleteRows = false;
-            this.dataGridServices.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridServices.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridServices.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridServices.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridOrders.AllowUserToAddRows = false;
+            this.dataGridOrders.AllowUserToDeleteRows = false;
+            this.dataGridOrders.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridOrders.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridOrders.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridOrders.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4});
-            this.dataGridServices.ContextMenuStrip = this.contextMenuStrip1;
-            this.dataGridServices.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridServices.Location = new System.Drawing.Point(0, 0);
-            this.dataGridServices.MultiSelect = false;
-            this.dataGridServices.Name = "dataGridServices";
-            this.dataGridServices.RowHeadersVisible = false;
-            this.dataGridServices.RowTemplate.Height = 23;
-            this.dataGridServices.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridServices.Size = new System.Drawing.Size(541, 371);
-            this.dataGridServices.TabIndex = 5;
-            this.dataGridServices.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridServices_KeyDown);
+            this.dataGridOrders.ContextMenuStrip = this.contextMenuStrip1;
+            this.dataGridOrders.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridOrders.Location = new System.Drawing.Point(0, 0);
+            this.dataGridOrders.MultiSelect = false;
+            this.dataGridOrders.Name = "dataGridOrders";
+            this.dataGridOrders.RowHeadersVisible = false;
+            this.dataGridOrders.RowTemplate.Height = 23;
+            this.dataGridOrders.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridOrders.Size = new System.Drawing.Size(471, 351);
+            this.dataGridOrders.TabIndex = 5;
+            this.dataGridOrders.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dataGridOrders_KeyDown);
             // 
             // Column1
             // 
@@ -181,21 +181,21 @@
             this.Column4.HeaderText = "Цена";
             this.Column4.Name = "Column4";
             // 
-            // formServices
+            // formOrders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(541, 406);
+            this.ClientSize = new System.Drawing.Size(471, 386);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "formServices";
-            this.Text = "servicesForm";
-            this.Activated += new System.EventHandler(this.formServices_Activated);
+            this.Name = "formOrders";
+            this.Text = "formOrders";
+            this.Activated += new System.EventHandler(this.formOrders_Activated);
             this.contextMenuStrip1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridServices)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridOrders)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -211,11 +211,10 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DataGridView dataGridServices;
+        private System.Windows.Forms.DataGridView dataGridOrders;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-
     }
 }

@@ -14,9 +14,9 @@ namespace Mobile_center
         public static formMain formMain;
         public static formAuthorization formAuthorization;
         public static formProducts formProducts;
-        public static formServices formServices;
         public static formCustomers formCustomers;
         public static formStaff formStaff;
+        public static formOrders formOrders;
 
         [STAThread]
         static void Main()
@@ -30,10 +30,10 @@ namespace Mobile_center
             DataGridManager manager = new DataGridManager();
 
             formProducts    = new formProducts(manager);
-            formServices    = new formServices(manager);
+            formOrders = new formOrders(manager);
             formCustomers   = new formCustomers(manager);
             formStaff       = new formStaff(manager);
-
+            
             Application.Run(formAuthorization);
         }
     }

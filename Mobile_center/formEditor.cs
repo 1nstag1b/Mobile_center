@@ -12,77 +12,26 @@ namespace Mobile_center
 {
     public partial class formEditor : Form
     {
-        private void viewProduct()
+        private void makeView(string[] headers)
         {
-            this.Text += " товара";
             dataGridView1.ColumnCount = 1;
-            dataGridView1.RowCount = 4;
+            dataGridView1.RowCount = headers.Length - 1;
 
-            dataGridView1.Rows[0].HeaderCell.Value = "Название";
-            dataGridView1.Rows[1].HeaderCell.Value = "Производитель";
-            dataGridView1.Rows[2].HeaderCell.Value = "Тип устройства";
-            dataGridView1.Rows[3].HeaderCell.Value = "Цена";
+            for (int i = 1; i < headers.Length; i++)
+            {
+                dataGridView1.Rows[i - 1].HeaderCell.Value = headers[i];
+            }
         }
 
-        private void viewService()
-        {
-            this.Text += " услуги";
-            dataGridView1.ColumnCount = 1;
-            dataGridView1.RowCount = 4;
-
-            //dataGridView1.Rows[0].HeaderCell.Value = "";
-            //dataGridView1.Rows[1].HeaderCell.Value = "";
-            //dataGridView1.Rows[2].HeaderCell.Value = "";
-            //dataGridView1.Rows[3].HeaderCell.Value = "";
-        }
-
-        private void viewCustomer()
-        {
-            this.Text += " покупателя";
-            dataGridView1.ColumnCount = 1;
-            dataGridView1.RowCount = 4;
-
-            //dataGridView1.Rows[0].HeaderCell.Value = "";
-            //dataGridView1.Rows[1].HeaderCell.Value = "";
-            //dataGridView1.Rows[2].HeaderCell.Value = "";
-            //dataGridView1.Rows[3].HeaderCell.Value = "";
-        }
-
-        private void viewStaff()
-        {
-            this.Text += " персонала";
-            dataGridView1.ColumnCount = 1;
-            dataGridView1.RowCount = 4;
-
-            //dataGridView1.Rows[0].HeaderCell.Value = "";
-            //dataGridView1.Rows[1].HeaderCell.Value = "";
-            //dataGridView1.Rows[2].HeaderCell.Value = "";
-            //dataGridView1.Rows[3].HeaderCell.Value = "";
-        }
-
-        public formEditor(string name, string type, string[] values = null)
+        public formEditor(string[] headers, string[] values = null)
         {
             InitializeComponent();
-            this.Text = name;
+            this.Text = headers[0];
 
-            switch (type)
-            {
-                case "dataGridProducts":
-                    viewProduct();
-                    break;
-                case "dataGridServices":
-                    viewService();
-                    break;
-                case "dataGridCustomers":
-                    viewCustomer();
-                    break;
-                case "dataGridStaff":
-                    viewStaff();
-                    break;
-            }
+            makeView(headers);
 
             int h = dataGridView1.Rows[0].Height * dataGridView1.RowCount;
-            ClientSize = new Size(Width, h + panel2.Height + 3);
+            ClientSize = new Size(Width, h + panel2.Height + 4);
 
             if (values != null)
                 for (int i = 0; i < values.Length; i++)

@@ -32,7 +32,7 @@
             this.lblPassword = new System.Windows.Forms.Label();
             this.tbLogin = new System.Windows.Forms.TextBox();
             this.tbPassword = new System.Windows.Forms.TextBox();
-            this.btnSignIn = new System.Windows.Forms.Button();
+            this.btnLogIn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblLogin
@@ -68,22 +68,23 @@
             this.tbPassword.Size = new System.Drawing.Size(100, 21);
             this.tbPassword.TabIndex = 3;
             // 
-            // btnSignIn
+            // btnLogIn
             // 
-            this.btnSignIn.Location = new System.Drawing.Point(37, 92);
-            this.btnSignIn.Name = "btnSignIn";
-            this.btnSignIn.Size = new System.Drawing.Size(158, 23);
-            this.btnSignIn.TabIndex = 4;
-            this.btnSignIn.Text = "Войти";
-            this.btnSignIn.UseVisualStyleBackColor = true;
-            this.btnSignIn.Click += new System.EventHandler(this.btnSignIn_Click);
+            this.btnLogIn.Location = new System.Drawing.Point(37, 92);
+            this.btnLogIn.Name = "btnLogIn";
+            this.btnLogIn.Size = new System.Drawing.Size(158, 23);
+            this.btnLogIn.TabIndex = 4;
+            this.btnLogIn.Text = "Войти";
+            this.btnLogIn.UseVisualStyleBackColor = true;
+            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
             // 
             // formAuthorization
             // 
+            this.AcceptButton = this.btnLogIn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(234, 145);
-            this.Controls.Add(this.btnSignIn);
+            this.Controls.Add(this.btnLogIn);
             this.Controls.Add(this.tbPassword);
             this.Controls.Add(this.tbLogin);
             this.Controls.Add(this.lblPassword);
@@ -104,6 +105,6 @@
         private System.Windows.Forms.Label lblPassword;
         private System.Windows.Forms.TextBox tbLogin;
         private System.Windows.Forms.TextBox tbPassword;
-        private System.Windows.Forms.Button btnSignIn;
+        private System.Windows.Forms.Button btnLogIn;
     }
 }
